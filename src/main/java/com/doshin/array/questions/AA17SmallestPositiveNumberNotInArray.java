@@ -1,7 +1,5 @@
 package com.doshin.array.questions;
 
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * How to find the smallest positive integer value that cannot be represented as sum of any subset of a given array? (solution)
