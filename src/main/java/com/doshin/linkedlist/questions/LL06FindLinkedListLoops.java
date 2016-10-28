@@ -1,4 +1,4 @@
-package com.doshin.list.questions;
+package com.doshin.linkedlist.questions;
 
 import java.util.Random;
 
@@ -31,7 +31,7 @@ import java.util.Random;
  * 
  */
 
-class LL02FindLinkedListLoops {
+class LL06FindLinkedListLoops {
 	NodeClass head; // head of linked list
 
 	/* Linked list NodeClass */
@@ -44,11 +44,11 @@ class LL02FindLinkedListLoops {
 			while (fast_ptr != null && fast_ptr.next != null) {
 				fast_ptr = fast_ptr.next.next;
 				slow_ptr = slow_ptr.next;
-				if(fast_ptr.equals(slow_ptr))
+				if (fast_ptr.equals(slow_ptr))
 					break;
 			}
-			System.out.println("The loop element is [" + slow_ptr.data
-					+ "] \n");
+			System.out
+					.println("The loop element is [" + slow_ptr.data + "] \n");
 		}
 	}
 
@@ -68,7 +68,7 @@ class LL02FindLinkedListLoops {
 	public void printList() {
 		NodeClass tnode = head;
 		int i = 0;
-		while (i  < 21) {
+		while (i < 21) {
 			System.out.print(tnode.data + "->");
 			tnode = tnode.next;
 			i++;
@@ -77,7 +77,7 @@ class LL02FindLinkedListLoops {
 	}
 
 	public static void main(String[] args) {
-		LL02FindLinkedListLoops llist = new LL02FindLinkedListLoops();
+		LL06FindLinkedListLoops llist = new LL06FindLinkedListLoops();
 
 		NodeClass loopNode = null;
 		int loopIndex = new Random().nextInt(20);

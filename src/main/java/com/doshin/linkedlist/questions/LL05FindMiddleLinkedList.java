@@ -1,4 +1,4 @@
-package com.doshin.list.questions;
+package com.doshin.linkedlist.questions;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -29,7 +29,7 @@ import java.util.Random;
  * 
  */
 
-class LL01FindMiddleLinkedList {
+class LL05FindMiddleLinkedList {
 	Node head; // head of linked list
 
 	/* Linked list node */
@@ -84,7 +84,7 @@ class LL01FindMiddleLinkedList {
 	}
 
 	public static void main(String[] args) {
-		LL01FindMiddleLinkedList llist = new LL01FindMiddleLinkedList();
+		LL05FindMiddleLinkedList llist = new LL05FindMiddleLinkedList();
 		for (int i = 5; i > 0; --i) {
 			llist.push(i);
 			llist.printList();
